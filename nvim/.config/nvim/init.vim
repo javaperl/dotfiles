@@ -129,6 +129,12 @@ colorscheme solarized8
 
 
 "
+" Make background transparent
+"
+"hi Normal guibg=NONE ctermbg=NONE
+
+
+"
 " Source more scripts
 "
 "runtime source_airline.vim
