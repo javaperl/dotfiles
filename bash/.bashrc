@@ -123,7 +123,8 @@ alias unsetPaths='unsetpaths'
 alias setupCoro='setupcoro'
 alias resetvpn='sudo kextunload /System/Library/Extensions/CiscoVPN.kext;sudo kextload /System/Library/Extensions/CiscoVPN.kext'
 #alias mongod='/opt/local/bin/mongod --dbpath /Users/kevin/personal/test/mongo_db'
-alias fullscreen='xrandr --newmode "2560x1440_60.00" 312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync;xrandr --addmode VGA-1 2560x1440_60.00;xrandr --output VGA-1 --mode 2560x1440_60.00'
+alias screen2560='xrandr --newmode "2560x1440_60.00" 312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync; xrandr --addmode VGA-1 2560x1440_60.00; xrandr --output VGA-1 --mode 2560x1440_60.00'
+alias screen1280='xrandr --newmode "1280x1024_60.00" 109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync; xrandr --addmode VGA-1 1280x1024_60.00; xrandr --output VGA-1 --mode 1280x1024_60.00'
 
 # --------------------------------------------
 # ----- set command line editor to be vi -----
