@@ -1,0 +1,3 @@
+[State]
+timestamp=1548619079
+converted=evolution.convert;gnome-screenshot.convert;pulseaudio.convert;nm-applet.convert;gsettings-desktop-schemas.convert;gvfs-dns-sd.convert;evolution-data-server.convert;evince.convert;org.gnome.seahorse.recipients.convert;org.gnome.crypto.pgp.convert;org.gnome.crypto.pgp_keyservers.convert;org.gnome.crypto.cache.convert;libgnomekbd.convert;wm-schemas.convert;
