@@ -83,8 +83,8 @@ nnoremap <C-p> :<C-u>FZF<CR>
 " NeoVim Terminal mappings
 "
 if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <A-[> <Esc>
+"  tnoremap <Esc> <C-\><C-n>
+"  tnoremap <A-[> <Esc>
 "  " Map meta-r for inserting register values
 "  tnoremap <expr> <A-r> '<C-\><C-n>"'.nr2char(getchar()).'pi'
 "  " Switching between split windows:
