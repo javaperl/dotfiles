@@ -9,7 +9,7 @@
 " <ctrl-\> c: functions that calling this function
 "
 if has("cscope")
-    set csprg=/usr/local/bin/cscope
+    set csprg=/bin/cscope
     set csto=0
     set cst
     set csverb
