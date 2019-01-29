@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=ELinks
+GenericName=Web Browser
+Comment=Browse the World Wide Web in Text-Mode
+Icon=html
+Exec=/usr/bin/elinks %u
+Terminal=true
+Actions=
+MimeType=text/html;
+Categories=Application;Network;
+NoDisplay=true

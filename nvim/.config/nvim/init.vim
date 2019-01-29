@@ -63,6 +63,7 @@ call minpac#add('rust-lang/rust.vim')
 call minpac#add('machakann/vim-highlightedyank')
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('itchyny/lightline.vim')
+call minpac#add('ap/vim-buftabline')
 call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-repeat')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
@@ -82,8 +83,8 @@ nnoremap <C-p> :<C-u>FZF<CR>
 " NeoVim Terminal mappings
 "
 if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <A-[> <Esc>
+"  tnoremap <Esc> <C-\><C-n>
+"  tnoremap <A-[> <Esc>
 "  " Map meta-r for inserting register values
 "  tnoremap <expr> <A-r> '<C-\><C-n>"'.nr2char(getchar()).'pi'
 "  " Switching between split windows:

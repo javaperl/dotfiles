@@ -1,7 +1,7 @@
 # ------------------
 # ----- goroot -----
 # ------------------
-GOROOT=/usr/local/Cellar/go/1.11.4/libexec
+#GOROOT=/usr/local/Cellar/go/1.11.4/libexec
 
 # ------------------
 # ----- gopath -----
@@ -15,7 +15,7 @@ PATH=.
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:$HOME/.npm-packages/bin
-PATH=$PATH:$GOROOT/bin
+#PATH=$PATH:$GOROOT/bin
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/personal/flutter/bin
 #PATH=$PATH:$HOME/personal/usr/local/bin
@@ -89,8 +89,9 @@ VISUAL=nvim
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
-export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-#export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR
+#export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
+
 
 # -------------------
 # ----- aliases -----
@@ -123,6 +124,9 @@ alias unsetPaths='unsetpaths'
 alias setupCoro='setupcoro'
 alias resetvpn='sudo kextunload /System/Library/Extensions/CiscoVPN.kext;sudo kextload /System/Library/Extensions/CiscoVPN.kext'
 #alias mongod='/opt/local/bin/mongod --dbpath /Users/kevin/personal/test/mongo_db'
+alias screen2560='xrandr --newmode "2560x1440_60.00" 312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync; xrandr --addmode VGA-1 2560x1440_60.00; xrandr --output VGA-1 --mode 2560x1440_60.00'
+alias screen1280='xrandr --newmode "1280x1024_60.00" 109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync; xrandr --addmode VGA-1 1280x1024_60.00; xrandr --output VGA-1 --mode 1280x1024_60.00'
+alias screen1024='xrandr --newmode "1024x768_60.00" 63.50  1024 1072 1176 1328  768 771 775 798 -hsync +vsync; xrandr --addmode VGA-1 1024x768_60.00; xrandr --output VGA-1 --mode 1024x768_60.00'
 
 # --------------------------------------------
 # ----- set command line editor to be vi -----
