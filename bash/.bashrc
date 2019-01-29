@@ -1,7 +1,7 @@
 # ------------------
 # ----- goroot -----
 # ------------------
-GOROOT=/usr/local/Cellar/go/1.11.4/libexec
+#GOROOT=/usr/local/Cellar/go/1.11.4/libexec
 
 # ------------------
 # ----- gopath -----
@@ -15,7 +15,7 @@ PATH=.
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:$HOME/.npm-packages/bin
-PATH=$PATH:$GOROOT/bin
+#PATH=$PATH:$GOROOT/bin
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/personal/flutter/bin
 #PATH=$PATH:$HOME/personal/usr/local/bin
@@ -89,8 +89,9 @@ VISUAL=nvim
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
-export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-#export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR
+#export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
+
 
 # -------------------
 # ----- aliases -----
