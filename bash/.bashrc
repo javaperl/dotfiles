@@ -86,12 +86,18 @@ FZF_DEFAULT_COMMAND='rg --files'
 # ------------------
 VISUAL=nvim
 
+#
+# --------------------------------------
+# ----- Bash HISTSIZE/HISTFILESIZE -----
+# --------------------------------------
+HISTSIZE=100000
+HISTFILESIZE=100000
+
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
 #export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE
 
 # -------------------
 # ----- aliases -----
