@@ -53,7 +53,7 @@ LIBRARY_PATH=$LIBRARY_PATH:/usr/local/Cellar/sdl2/2.0.3/lib
 # -------------------
 # ----- manpath -----
 # -------------------
-MANPATH=$MANPATH:$HOME/personal/usr/local/share/man
+#MANPATH=$MANPATH:$HOME/personal/usr/local/share/man
 #MANPATH=$MANPATH:/opt/local/share/man
 MANPATH=$MANPATH:/usr/local/share/man
 
