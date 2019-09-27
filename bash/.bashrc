@@ -17,7 +17,7 @@ PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:$HOME/.npm-packages/bin
 #PATH=$PATH:$GOROOT/bin
 PATH=$PATH:$GOPATH/bin
-PATH=$PATH:$HOME/personal/flutter/bin
+#PATH=$PATH:$HOME/personal/flutter/bin
 #PATH=$PATH:$HOME/personal/usr/local/bin
 #PATH=$PATH:$HOME/personal/usr/local/go/bin
 #PATH=$PATH:/opt/local/bin
@@ -29,7 +29,8 @@ PATH=$PATH:/sbin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/X11R6/bin
-PATH=$PATH:$HOME/Library/Python/3.7/bin
+PATH=$PATH:/snap/bin
+#PATH=$PATH:$HOME/Library/Python/3.7/bin
 
 # -----------------------------
 # ----- dyld_library_path -----
@@ -52,7 +53,7 @@ LIBRARY_PATH=$LIBRARY_PATH:/usr/local/Cellar/sdl2/2.0.3/lib
 # -------------------
 # ----- manpath -----
 # -------------------
-MANPATH=$MANPATH:$HOME/personal/usr/local/share/man
+#MANPATH=$MANPATH:$HOME/personal/usr/local/share/man
 #MANPATH=$MANPATH:/opt/local/share/man
 MANPATH=$MANPATH:/usr/local/share/man
 
