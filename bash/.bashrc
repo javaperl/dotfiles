@@ -143,3 +143,8 @@ set -o vi
 # ----- execute fzf shell initialization -----
 # --------------------------------------------
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# -----------------------------
+# ----- execute startship -----
+# -----------------------------
+eval "$(starship init bash)"
