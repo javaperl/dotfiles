@@ -7,6 +7,13 @@ set mouse=a
 
 
 "
+" Line number display
+"
+"set nu
+set rnu
+
+
+"
 " Tab stops
 "
 set tabstop=4
