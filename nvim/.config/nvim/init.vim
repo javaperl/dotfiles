@@ -9,7 +9,7 @@ set mouse=a
 "
 " Line number display
 "
-"set nu
+set nu
 set rnu
 
 
