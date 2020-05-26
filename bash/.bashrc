@@ -13,6 +13,7 @@ GOPATH=$HOME/personal/go_projects
 # ----------------
 PATH=.
 PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:$HOME/.npm-packages/bin
 #PATH=$PATH:$GOROOT/bin
