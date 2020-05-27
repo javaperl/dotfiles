@@ -2,7 +2,7 @@
 	name = Kevin Wang
 	email = javaperl@gmail.com
 [core]
-	excludesfile = /Users/kwang/.gitignore_global
+	excludesfile = /home/kwang/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
