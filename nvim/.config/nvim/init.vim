@@ -143,6 +143,13 @@ colorscheme solarized8
 
 
 "
+" For Windows 10 Terminal, map <c-q> to visual block selection to avoid <c-v>
+" for Windows paste
+"
+noremap <c-q> <c-v>
+
+
+"
 " Source more scripts
 "
 "runtime source_airline.vim
