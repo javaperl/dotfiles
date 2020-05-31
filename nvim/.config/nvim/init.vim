@@ -5,7 +5,7 @@ set inccommand=split
 set hidden
 set mouse=a
 "
-" To fix NeoVim change terminal's shape issue.
+" To fix NeoVim change terminal's cursor shape issue.
 "
 set guicursor=
 
