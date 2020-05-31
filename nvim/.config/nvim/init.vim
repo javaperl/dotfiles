@@ -53,7 +53,7 @@ set listchars=tab:▸\ ,eol:¬
 "
 " Allow the . to execute once for each line of a visual selection
 "
-vnoremap . :normal .<CR>
+xnoremap . :normal .<CR>
 
 
 "
