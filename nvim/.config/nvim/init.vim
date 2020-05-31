@@ -119,11 +119,24 @@ endif
 "
 " vim-solarized8 colorscheme
 "
-call minpac#add('lifepillar/vim-solarized8')
+"call minpac#add('lifepillar/vim-solarized8')
+""syntax enable
+"set background=dark
+""set background=light
+"colorscheme solarized8
+""colorscheme solarized8_low
+""colorscheme solarized8_high
+""colorscheme solarized8_flat
+
+
+"
+" gruvbox colorscheme
+"
+call minpac#add('gruvbox-community/gruvbox')
 "syntax enable
 set background=dark
 "set background=light
-colorscheme solarized8
+colorscheme gruvbox
 "colorscheme solarized8_low
 "colorscheme solarized8_high
 "colorscheme solarized8_flat
