@@ -4,6 +4,10 @@ set inccommand=split
 "set inccommand=nosplit
 set hidden
 set mouse=a
+"
+" To fix NeoVim change terminal's shape issue.
+"
+set guicursor=
 
 
 "
@@ -136,6 +140,8 @@ call minpac#add('gruvbox-community/gruvbox')
 "syntax enable
 set background=dark
 "set background=light
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_hls_cursor='orange'
 colorscheme gruvbox
 "colorscheme solarized8_low
 "colorscheme solarized8_high
