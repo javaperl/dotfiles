@@ -150,6 +150,17 @@ noremap <c-q> <c-v>
 
 
 "
+" Visual @ mode
+"
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
+
+
+"
 " Source more scripts
 "
 "runtime source_airline.vim
