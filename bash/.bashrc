@@ -101,6 +101,12 @@ HISTFILESIZE=100000
 # -----------------------------------------
 RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 
+#
+# -----------------------------------------------------------
+# ----- DISPLAY - for Windows WSL 2 Terminal xsel/xclip -----
+# -----------------------------------------------------------
+DISPLAY=localhost:0.0
+
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
