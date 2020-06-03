@@ -105,13 +105,13 @@ RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 # -----------------------------------------------------------
 # ----- DISPLAY - for Windows WSL 2 Terminal xsel/xclip -----
 # -----------------------------------------------------------
-DISPLAY=localhost:0.0
+DISPLAY=:0
 
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
 #export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH DISPLAY
 
 # -------------------
 # ----- aliases -----

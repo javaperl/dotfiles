@@ -5,3 +5,4 @@ cscope.*
 nvim/.config/nvim/.netrwhist
 nvim/.config/nvim/pack/minpac/opt/vim-scriptease/
 nvim/.config/nvim/pack/minpac/start/
+vim-plug-plugins/

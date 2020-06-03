@@ -1,7 +1,5 @@
 set hlsearch
 set incsearch
-set inccommand=split
-"set inccommand=nosplit
 set hidden
 set mouse=a
 "
@@ -57,29 +55,37 @@ xnoremap . :normal .<CR>
 
 
 "
-" Enable and run minpac
+" vim-plug managed plugins will be downloaded under the specified directory.
 "
-packadd minpac
-call minpac#init()
-command! PackUpdate call minpac#update()
-command! PackClean call minpac#clean()
-
-
+call plug#begin('~/.vim/vim-plug-plugins')
 "
-" minpac managed plugins, except some separate ones with more configurations below
+" vim-plug managed plugins.
 "
-call minpac#add('tpope/vim-unimpaired')
-call minpac#add('radenling/vim-dispatch-neovim')
-call minpac#add('rust-lang/rust.vim')
-call minpac#add('machakann/vim-highlightedyank')
-call minpac#add('airblade/vim-gitgutter')
-call minpac#add('itchyny/lightline.vim')
-call minpac#add('ap/vim-buftabline')
-call minpac#add('tpope/vim-surround')
-call minpac#add('tpope/vim-repeat')
-call minpac#add('tpope/vim-commentary')
-call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
-call minpac#add('k-takata/minpac', {'type': 'opt'})
+Plug 'tpope/vim-unimpaired'
+Plug 'rust-lang/rust.vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-buftabline'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'gruvbox-community/gruvbox'
+"
+" vim-plug managed plugins list ends here.  Plugins become visible to vim
+" after this call.
+"
+call plug#end()
+"
+" vim-plug commands.
+"
+"PlugInstall
+"PlugUpdate
+"PlugClean[!]
+"PlugUpgrade
+"PlugStatus
+"PlugDiff
+"PlugSnapshot[!]
 
 
 "
@@ -135,9 +141,8 @@ endif
 
 
 "
-" gruvbox colorscheme
+" gruvbox colorscheme configurations
 "
-call minpac#add('gruvbox-community/gruvbox')
 "syntax enable
 set background=dark
 "set background=light
@@ -187,5 +192,5 @@ endfunction
 "runtime source_base16-vim.vim
 "runtime source_vim-colorschemes.vim
 "runtime source_pear-tree.vim
-runtime source_cscope.vim
+"runtime source_cscope.vim
 "runtime source_vimade.vim
