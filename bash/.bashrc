@@ -86,7 +86,7 @@ FZF_DEFAULT_COMMAND='rg --files'
 # ------------------
 # ----- VISUAL -----
 # ------------------
-VISUAL=nvim
+VISUAL=vim
 
 #
 # --------------------------------------
@@ -119,8 +119,8 @@ export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZ
 alias ls='ls -G'
 #alias vi='vim -X'
 #alias vim='vim -X'
-alias vim='nvim'
-alias vi='nvim'
+#alias vim='nvim'
+alias vi='vim'
 alias cddoc='cd /home/kevin/ws/docs/is/fozziebear/2.0/eng'
 alias cdcsrc='cd /home/kevin/ws/senderbase_data/src/cpp'
 alias cddcsrc='cd /home/kevin/ws/dbconf/src/python/dbconf'
