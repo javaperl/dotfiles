@@ -2,10 +2,6 @@ set hlsearch
 set incsearch
 set hidden
 set mouse=a
-"
-" To fix NeoVim change terminal's cursor shape issue.
-"
-set guicursor=
 
 
 "
@@ -118,9 +114,16 @@ endif
 
 
 "
+" For lightline.vim, as the status line is shown as a plain one on vim 8.x, add
+" this:
+"
+set laststatus=2
+
+
+"
 " vim-colors-solarized colorscheme
 "
-"call minpac#add('altercation/vim-colors-solarized')
+"Plug 'altercation/vim-colors-solarized'
 "syntax enable
 "set background=dark
 "set background=light
@@ -130,7 +133,7 @@ endif
 "
 " vim-solarized8 colorscheme
 "
-"call minpac#add('lifepillar/vim-solarized8')
+"Plug 'lifepillar/vim-solarized8'
 ""syntax enable
 "set background=dark
 ""set background=light
@@ -147,7 +150,7 @@ endif
 set background=dark
 "set background=light
 let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_hls_cursor='orange'
+"let g:gruvbox_hls_cursor='orange'
 colorscheme gruvbox
 "colorscheme solarized8_low
 "colorscheme solarized8_high
@@ -157,7 +160,7 @@ colorscheme gruvbox
 "
 " mysticaltutor colorscheme
 "
-"call minpac#add('caksoylar/vim-mysticaltutor')
+"Plug 'caksoylar/vim-mysticaltutor'
 "colorscheme mysticaltutor
 
 
