@@ -148,6 +148,13 @@ alias screen2560='xrandr --newmode "2560x1440_60.00" 312.25  2560 2752 3024 3488
 alias screen1280='xrandr --newmode "1280x1024_60.00" 109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync; xrandr --addmode VGA-1 1280x1024_60.00; xrandr --output VGA-1 --mode 1280x1024_60.00'
 alias screen1024='xrandr --newmode "1024x768_60.00" 63.50  1024 1072 1176 1328  768 771 775 798 -hsync +vsync; xrandr --addmode VGA-1 1024x768_60.00; xrandr --output VGA-1 --mode 1024x768_60.00'
 
+# -------------------------------
+# ----- disable flow contrl -----
+# -------------------------------
+stty -ixon
+#stty stop ^e   # instead of ^s
+#stty start ^b  # instead of ^q
+
 # --------------------------------------------
 # ----- set command line editor to be vi -----
 # --------------------------------------------
