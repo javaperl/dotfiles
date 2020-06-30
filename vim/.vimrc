@@ -2,6 +2,7 @@ set hlsearch
 set incsearch
 set hidden
 set mouse=a
+set history=10000
 
 
 "
@@ -32,7 +33,8 @@ if has("autocmd")
 "  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 "  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
 "  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
-  autocmd FileType rust setlocal ts=4 sts=4 sw=4 expandtab commentstring=//\ %s
+  autocmd FileType rust :setlocal ts=4 sts=4 sw=4 expandtab commentstring=//\ %s
+  autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
 endif
 
 
