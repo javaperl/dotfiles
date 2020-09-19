@@ -105,7 +105,7 @@ RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 # -----------------------------------------------------------
 # ----- DISPLAY - for Windows WSL 2 Terminal xsel/xclip -----
 # -----------------------------------------------------------
-DISPLAY=:0
+#DISPLAY=:0
 
 # ----------------------------
 # ----- export variables -----
@@ -116,7 +116,10 @@ export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZ
 # -------------------
 # ----- aliases -----
 # -------------------
-alias ls='ls -G'
+# for BSD/macOS
+#alias ls='ls -G'
+# for other linux
+alias ls='ls --color=auto'
 #alias vi='vim -X'
 #alias vim='vim -X'
 #alias vim='nvim'
