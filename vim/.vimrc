@@ -3,6 +3,7 @@ set incsearch
 set hidden
 set mouse=a
 set history=10000
+set visualbell
 
 
 "
