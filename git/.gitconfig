@@ -15,6 +15,6 @@
 	path = vim
 [merge]
 	tool = vimdiff3
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+#[credential "https://github.com"]
+#   helper = 
+#   helper = !/usr/bin/gh auth git-credential
