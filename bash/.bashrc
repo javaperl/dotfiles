@@ -171,4 +171,4 @@ set -o vi
 # -----------------------------
 # ----- execute startship -----
 # -----------------------------
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
