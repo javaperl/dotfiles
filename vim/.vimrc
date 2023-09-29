@@ -186,6 +186,8 @@ endfunction
 
 "
 " rust-analyzer & vim-lsp
+" https://rust-analyzer.github.io/manual.html#vim-lsp
+" https://github.com/prabirshrestha/vim-lsp
 "
 if executable('rust-analyzer')
   au User lsp_setup call lsp#register_server({
