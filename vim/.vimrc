@@ -69,6 +69,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
+Plug 'prabirshrestha/vim-lsp'
 "
 " vim-plug managed plugins list ends here.  Plugins become visible to vim
 " after this call.
@@ -181,6 +182,36 @@ function! ExecuteMacroOverVisualRange()
   echo "@".getcmdline()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
+
+
+"
+" rust-analyzer & vim-lsp
+"
+if executable('rust-analyzer')
+  au User lsp_setup call lsp#register_server({
+        \   'name': 'Rust Language Server',
+        \   'cmd': {server_info->['rust-analyzer']},
+        \   'whitelist': ['rust'],
+        \ })
+endif
+
+if executable('rust-analyzer')
+  au User lsp_setup call lsp#register_server({
+        \   'name': 'Rust Language Server',
+        \   'cmd': {server_info->['rust-analyzer']},
+        \   'whitelist': ['rust'],
+        \   'initialization_options': {
+        \     'cargo': {
+        \       'buildScripts': {
+        \         'enable': v:true,
+        \       },
+        \     },
+        \     'procMacro': {
+        \       'enable': v:true,
+        \     },
+        \   },
+        \ })
+endif
 
 
 "
