@@ -15,6 +15,7 @@ PATH=.
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/.cargo/bin
+PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:$HOME/.npm-packages/bin
 #PATH=$PATH:$GOROOT/bin
 PATH=$PATH:$GOPATH/bin
@@ -107,19 +108,24 @@ RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src/
 # -----------------------------------------------------------
 #DISPLAY=:0
 
+# --------------------------------------------------------------------------------------------------
+# ----- BASH_SILENCE_DEPRECATION_WARNING for undisplaying MacOS terminal warning of zsh change -----
+# --------------------------------------------------------------------------------------------------
+BASH_SILENCE_DEPRECATION_WARNING=1
+
 # ----------------------------
 # ----- export variables -----
 # ----------------------------
 #export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH BASH_SILENCE_DEPRECATION_WARNING
 
 # -------------------
 # ----- aliases -----
 # -------------------
 # for BSD/macOS
-#alias ls='ls -G'
+alias ls='ls -G'
 # for other linux
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 #alias vi='vim -X'
 #alias vim='vim -X'
 #alias vim='nvim'
@@ -171,4 +177,6 @@ set -o vi
 # -----------------------------
 # ----- execute startship -----
 # -----------------------------
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
+#eval "(nu)"
+. "$HOME/.cargo/env"
