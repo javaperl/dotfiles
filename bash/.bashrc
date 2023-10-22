@@ -178,5 +178,4 @@ set -o vi
 # ----- execute startship -----
 # -----------------------------
 #eval "$(starship init bash)"
-#eval "(nu)"
 . "$HOME/.cargo/env"
