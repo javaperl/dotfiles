@@ -70,6 +70,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'ziglang/zig.vim'
 "
 " vim-plug managed plugins list ends here.  Plugins become visible to vim
 " after this call.
