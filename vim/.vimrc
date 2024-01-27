@@ -218,6 +218,15 @@ endif
 
 
 "
+" Fix slow Typescript syntax highlighting in vim
+" https://jameschambers.co.uk/vim-typescript-slow
+"
+syntax on
+" Use new regular expression engine
+set re=0
+
+
+"
 " Source more scripts
 "
 "runtime source_airline.vim
