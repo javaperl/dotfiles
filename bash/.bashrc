@@ -3,6 +3,11 @@
 # ------------------
 #GOROOT=/usr/local/Cellar/go/1.11.4/libexec
 
+# ----------------
+# ----- deno -----
+# ----------------
+DENO_INSTALL=$HOME/.deno
+
 # ------------------
 # ----- gopath -----
 # ------------------
@@ -16,6 +21,7 @@ PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:$DENO_INSTALL/bin
 PATH=$PATH:$HOME/.npm-packages/bin
 #PATH=$PATH:$GOROOT/bin
 PATH=$PATH:$GOPATH/bin
@@ -117,7 +123,7 @@ BASH_SILENCE_DEPRECATION_WARNING=1
 # ----- export variables -----
 # ----------------------------
 #export GOROOT GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL
-export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH BASH_SILENCE_DEPRECATION_WARNING
+export GOPATH PATH DYLD_LIBRARY_PATH LIBRARY_PATH MANPATH DEV_ROOT PS1 EDITOR FZF_DEFAULT_COMMAND VISUAL HISTSIZE HISTFILESIZE RUST_SRC_PATH BASH_SILENCE_DEPRECATION_WARNING DENO_INSTALL
 
 # -------------------
 # ----- aliases -----
