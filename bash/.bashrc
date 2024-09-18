@@ -123,7 +123,7 @@ BASH_SILENCE_DEPRECATION_WARNING=1
 # ---------------------------
 # ----- XDG_CONFIG_HOME -----
 # ---------------------------
-XDG_CONFIG_HOME=$HOME/config/
+XDG_CONFIG_HOME=$HOME/.config/
 
 # ----------------------------
 # ----- export variables -----
