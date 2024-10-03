@@ -186,12 +186,12 @@ set -o vi
 # --------------------------------------------
 #[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# -----------------------------
-# ----- execute startship -----
-# -----------------------------
+# -------------------------------------
+# ----- execute some environments -----
+# -------------------------------------
 #eval "$(starship init bash)"
 . "$HOME/.cargo/env"
-
+eval "$(zoxide init bash)"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
