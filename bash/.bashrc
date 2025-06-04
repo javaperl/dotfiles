@@ -20,6 +20,13 @@ PATH=.
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/.cargo/bin
+PATH=$PATH:/opt/homebrew/opt/make/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/gnu-sed/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/grep/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/gnu-tar/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/gnu-getopt/bin
+PATH=$PATH:/opt/homebrew/opt/findutils/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
 PATH=$PATH:$/usr/local/go/bin
 PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:$DENO_INSTALL/bin
@@ -271,3 +278,14 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+#
+# vim fzf
+#
+vf() {
+  local file
+  file=$(fzf --preview 'bat --color=always {}' --height 40% --border)
+  if [[ -n $file ]]; then
+    vim "$file"
+  fi
+}
