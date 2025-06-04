@@ -71,6 +71,9 @@ Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'ziglang/zig.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+"
 "
 " vim-plug managed plugins list ends here.  Plugins become visible to vim
 " after this call.

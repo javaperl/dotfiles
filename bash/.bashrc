@@ -199,6 +199,8 @@ set -o vi
 #eval "$(starship init bash)"
 . "$HOME/.cargo/env"
 eval "$(zoxide init bash)"
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
