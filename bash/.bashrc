@@ -27,6 +27,7 @@ PATH=$PATH:/opt/homebrew/opt/gnu-tar/libexec/gnubin
 PATH=$PATH:/opt/homebrew/opt/gnu-getopt/bin
 PATH=$PATH:/opt/homebrew/opt/findutils/libexec/gnubin
 PATH=$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin
+PATH=$PATH:/opt/homebrew/opt/postgresql@15/bin
 PATH=$PATH:$/usr/local/go/bin
 PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:$DENO_INSTALL/bin
