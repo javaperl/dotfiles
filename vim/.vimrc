@@ -95,7 +95,8 @@ call plug#end()
 " FZF/fzf
 "
 " this is for mac's homebrew
-set rtp+=/usr/local/opt/fzf
+"set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 " normal mode mapping
 nnoremap <C-p> :<C-u>FZF<CR>
 
