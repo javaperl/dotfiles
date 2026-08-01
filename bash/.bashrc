@@ -47,6 +47,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/X11R6/bin
 PATH=$PATH:/snap/bin
+PATH=$PATH:/nix/var/nix/profiles/default/bin
 #PATH=$PATH:$HOME/Library/Python/3.7/bin
 
 # -----------------------------
